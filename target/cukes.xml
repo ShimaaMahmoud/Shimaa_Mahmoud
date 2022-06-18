@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="52.595">
+    <testcase classname="Login" name="User can login  with valid data" time="13.416">
+        <failure message="expected [true] but found [false]" type="java.lang.AssertionError">
+            <![CDATA[When user enter valid data..................................................passed
+Then user can login  sucsessfully...........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at Steps.Login.user_can_login_sucsessfully(Login.java:20)
+	at ✽.user can login  sucsessfully(file:///C:/Users/MaxaAB-Dell/Desktop/bugs_ScreenShots/Facebook/src/main/resources/Features/Login.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Login" name="User cannot login  with invalid data" time="11.997">
+        <system-out>
+            <![CDATA[When user enter Invalid data................................................passed
+Then user cannot login with validation message..............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User cannot login  with empty data" time="6.484">
+        <system-out>
+            <![CDATA[When user enter empty data..................................................passed
+Then user cannot login with validation_message..............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Registration" name="User can register  with valid data" time="13.281">
+        <system-out>
+            <![CDATA[When user enter valida data.................................................passed
+Then user can register sucsessfully.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Registration" name="User cannot register  with invalid data" time="7.053">
+        <system-out>
+            <![CDATA[When user enter invalid password............................................passed
+Then user cannot register sucsessfully......................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
